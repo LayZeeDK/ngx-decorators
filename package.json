@@ -1,7 +1,25 @@
 {
-  "name": "angular-template",
-  "description": "",
-  "homepage": "https://stackblitz.com/edit/ngx-global-component-configuration",
+  "name": "ngx-decorators",
+  "description": "Decorators that enable you to configure your Angular components.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Lars Gyrup Brink Nielsen",
+    "email": "larsbrinknielsen@gmail.com",
+    "url": "https://github.com/LayZeeDK"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "unknown"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "5.2.4",
@@ -18,17 +36,6 @@
     "jasmine-core": "2.99.1",
     "@types/jasmine": "2.8.6"
   },
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  "private": true,
   "devDependencies": {
     "@angular/cli": "1.6.7",
     "@angular/compiler-cli": "^5.0.0",
