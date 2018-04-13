@@ -1,4 +1,7 @@
 {
+  "extends": [
+    "tslint:latest"
+  ],
   "rulesDirectory": [
     "node_modules/codelyzer"
   ],
@@ -30,16 +33,16 @@
     "label-position": true,
     "max-line-length": [
       true,
-      140
+      80
     ],
-    "member-access": false,
+    "member-access": true,
     "member-ordering": [
       true,
       {
         "order": [
           "static-field",
-          "instance-field",
           "static-method",
+          "instance-field",
           "instance-method"
         ]
       }
@@ -60,10 +63,6 @@
     "no-empty": false,
     "no-empty-interface": true,
     "no-eval": true,
-    "no-inferrable-types": [
-      true,
-      "ignore-params"
-    ],
     "no-misused-new": true,
     "no-non-null-assertion": true,
     "no-shadowed-variable": true,
@@ -138,6 +137,15 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+    "directive-class-suffix": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration"
+    ]
   }
 }

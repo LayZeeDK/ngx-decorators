@@ -19,6 +19,7 @@
     "paths": {
       "ngx-decorators": ["packages"],
       "ngx-decorators/*": ["packages/*"]
-    }
+    },
+    "strict": true
   }
 }
