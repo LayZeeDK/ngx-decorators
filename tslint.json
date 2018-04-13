@@ -150,6 +150,12 @@
     "arrow-parens": [
       true,
       "ban-single-arg-parens"
+    ],
+    "no-submodule-imports": [
+      true,
+      "@angular/core",
+      "@angular/platform-browser-dynamic",
+      "zone.js/dist"
     ]
   }
 }
