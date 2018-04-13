@@ -146,6 +146,10 @@
       "property-declaration",
       "variable-declaration",
       "member-variable-declaration"
+    ],
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
     ]
   }
 }
