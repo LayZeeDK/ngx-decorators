@@ -1,0 +1,18 @@
+{
+  "name": "ngx-decorators",
+  "description": "Decorators that enable you to configure your Angular components.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Lars Gyrup Brink Nielsen",
+    "email": "larsbrinknielsen@gmail.com",
+    "url": "https://github.com/LayZeeDK"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "unknown"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=4.0.0 <6.0.0"
+  }
+}
