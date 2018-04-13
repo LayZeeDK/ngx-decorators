@@ -8,10 +8,20 @@
     "email": "larsbrinknielsen@gmail.com",
     "url": "https://github.com/LayZeeDK"
   },
+  "homepage": "https://github.com/LayZeeDK/ngx-decorators",
+  "bugs": "https://github.com/LayZeeDK/ngx-decorators/issues",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/LayZeeDK/ngx-decorators.git"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "tag": "unknown"
   },
+  "keywords": [
+    "angular",
+    "decorators"
+  ],
   "peerDependencies": {
     "@angular/core": ">=4.0.0 <6.0.0"
   }
