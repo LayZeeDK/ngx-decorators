@@ -1,1 +1,1 @@
-export * from './compose';
+export * from './src/compose';

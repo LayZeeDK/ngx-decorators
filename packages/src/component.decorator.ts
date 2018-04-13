@@ -4,7 +4,7 @@ import {
 } from '@angular/core';
 import { Component as NgComponent } from '@angular/core';
 
-import { compose } from '../functions';
+import { compose } from '../common';
 import { ComponentOptionsCombinator } from './component-options-combinator';
 
 let optionCombinators: ReadonlyArray<ComponentOptionsCombinator> = [];
