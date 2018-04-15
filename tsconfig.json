@@ -20,6 +20,6 @@
       "ngx-decorators": ["packages"],
       "ngx-decorators/*": ["packages/*"]
     },
-    "strict": true
+    "strict": false
   }
 }
