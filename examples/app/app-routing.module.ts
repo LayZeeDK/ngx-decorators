@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { CommmonClassComponent } from './common-class';
+
+const routes: Routes = [
+  { path: 'common-class', component: CommmonClassComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'common-class' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
