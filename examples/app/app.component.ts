@@ -1,4 +1,4 @@
-import { Component } from './common';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'example-app',
