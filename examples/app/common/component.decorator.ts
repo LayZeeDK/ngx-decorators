@@ -1,21 +1,22 @@
 import { ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
-
 import {
-  addCombinators,
   addHostClass,
   ComponentOptionsCombinator,
+  createComponentDecorator,
+  CustomComponentDecorator,
   useChangeDetection,
   useViewEncapsulation,
-} from '../../libs/component-configuration';
+} from 'ngx-decorators';
 
 const commonClass: string = 'o-custom-element';
 const addCommonClass: ComponentOptionsCombinator = addHostClass(commonClass);
-const useShadowDom: ComponentOptionsCombinator = 
+const useShadowDom: ComponentOptionsCombinator =
   useViewEncapsulation(ViewEncapsulation.Native);
 const detectChangesOnPush: ComponentOptionsCombinator =
   useChangeDetection(ChangeDetectionStrategy.OnPush);
 
-addCombinators(
+export const Component: CustomComponentDecorator = createComponentDecorator([
   addCommonClass,
   useShadowDom,
-  detectChangesOnPush);
+  detectChangesOnPush,
+]);

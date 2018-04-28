@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "ngx-decorators"
+    "name": "ngx-decorators-examples"
   },
   "apps": [
     {
-      "root": "src",
-      "outDir": "dist",
+      "root": "examples",
+      "outDir": "dist/examples",
       "assets": [
         "assets",
         "favicon.ico"
@@ -17,9 +17,9 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
+      "prefix": "example",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -36,13 +36,16 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json"
+      "project": "examples/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
     },
     {
-      "project": "src/tsconfig.spec.json"
+      "project": "examples/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
     },
     {
-      "project": "e2e/tsconfig.e2e.json"
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {
@@ -51,7 +54,27 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "class": {
+      "spec": false
+    },
+    "component": {
+      "spec": false
+    },
+    "directive": {
+      "spec": false
+    },
+    "guard": {
+      "spec": false
+    },
+    "module": {
+      "spec": false
+    },
+    "pipe": {
+      "spec": false
+    },
+    "service": {
+      "spec": false
+    }
   }
 }

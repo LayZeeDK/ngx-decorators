@@ -1,4 +1,4 @@
-# [WIP] Angular Decorators
+# Decorators for Angular (ngx-decorators)
 
 Decorators and related utilites for configuring your Angular Components.
 

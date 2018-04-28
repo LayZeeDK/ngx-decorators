@@ -1,19 +1,28 @@
 import {
   Component as ComponentOptions,
+  // Yes, @angular/core actually has two declarations called 'Component'.
+  Component as NgComponent,
   TypeDecorator,
 } from '@angular/core';
-import { Component as NgComponent } from '@angular/core';
 
 import { compose } from '../common';
 import { ComponentOptionsCombinator } from './component-options-combinator';
 
-let optionCombinators: ReadonlyArray<ComponentOptionsCombinator> = [];
-export const addCombinators: ((...cs: ComponentOptionsCombinator[]) => void) =
-  (...combinators) => {
-    optionCombinators = [
-      ...optionCombinators,
-      ...combinators,
-    ];
-  };
-export const Component: ((options: ComponentOptions) => TypeDecorator) =
-  options => compose(NgComponent, ...optionCombinators)(options);
+// Not called 'ComponentDecorator', as @angular/core declares one of that name.
+export type CustomComponentDecorator =
+  (options: ComponentOptions) => TypeDecorator;
+type ComponentDecoratorFactory =
+  (combinators: ReadonlyArray<ComponentOptionsCombinator>) =>
+    CustomComponentDecorator;
+type Combinators = ReadonlyArray<ComponentOptionsCombinator>;
+
+/**
+ * Create a custom component decorator by composing the specified component
+ * option combinators.
+ *
+ * @param combinators Component option combinators.
+ */
+export const createComponentDecorator: ComponentDecoratorFactory =
+  (combinators: Combinators = []): CustomComponentDecorator =>
+    (options: ComponentOptions): TypeDecorator =>
+      compose(NgComponent, ...combinators)(options);

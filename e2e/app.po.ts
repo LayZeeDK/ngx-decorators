@@ -1,11 +1,11 @@
 import { browser, by, element } from 'protractor';
 
-export class AngularTemplatePage {
-  navigateTo() {
+export class AppPage {
+  public navigateTo() {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  public getParagraphText() {
+    return element(by.css('example-root h1')).getText();
   }
 }
