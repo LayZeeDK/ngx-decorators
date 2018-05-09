@@ -115,18 +115,6 @@
       "check-separator",
       "check-type"
     ],
-    "directive-selector": [
-      true,
-      "attribute",
-      "example",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "example",
-      "kebab-case"
-    ],
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,

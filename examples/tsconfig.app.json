@@ -1,12 +1,12 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist/examples",
+    "outDir": "../out-tsc/examples",
     "module": "es2015",
     "types": []
   },
   "exclude": [
-    "test.ts",
+    "examples/test.ts",
     "**/*.spec.ts"
   ]
 }
