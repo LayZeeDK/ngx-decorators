@@ -4,13 +4,13 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 
-import { forceViewEncapsulation, useViewEncapsulation } from './view-encapsulation';
 import { ComponentOptionsCombinator } from './component-options-combinator';
+import { forceViewEncapsulation, useViewEncapsulation } from './view-encapsulation';
 
 describe('View encapsulation', () => {
   describe('forceViewEncapsulation', () => {
     const forceShadowDom: ComponentOptionsCombinator =
-      forceViewEncapsulation(ViewEncapsulation.Native)
+      forceViewEncapsulation(ViewEncapsulation.Native);
 
     it('adds a view encapsulation to the component configuration', () => {
       // Act
@@ -59,7 +59,7 @@ describe('View encapsulation', () => {
 
   describe('useViewEncapsulation', () => {
     const useShadowDom: ComponentOptionsCombinator =
-      useViewEncapsulation(ViewEncapsulation.Native)
+      useViewEncapsulation(ViewEncapsulation.Native);
 
     it('adds a default view encapsulation to the component configuration', () => {
       // Act

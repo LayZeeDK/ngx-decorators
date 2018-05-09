@@ -8,7 +8,7 @@ export const forceViewEncapsulation:
     options => ({
       ...options,
       encapsulation,
-    })
+    });
 export const useViewEncapsulation:
   ((ve: ViewEncapsulation) => ComponentOptionsCombinator) =
   encapsulation =>
@@ -16,4 +16,3 @@ export const useViewEncapsulation:
       encapsulation,
       ...options,
     });
-  

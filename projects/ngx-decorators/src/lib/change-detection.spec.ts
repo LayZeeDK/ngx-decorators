@@ -10,7 +10,7 @@ import { ComponentOptionsCombinator } from './component-options-combinator';
 describe('Change detection', () => {
   describe('forceChangeDetection', () => {
     const forceOnPush: ComponentOptionsCombinator =
-      forceChangeDetection(ChangeDetectionStrategy.OnPush)
+      forceChangeDetection(ChangeDetectionStrategy.OnPush);
 
     it('adds a change detection strategy to the component configuration', () => {
       // Act
@@ -59,7 +59,7 @@ describe('Change detection', () => {
 
   describe('useChangeDetection', () => {
     const useOnPush: ComponentOptionsCombinator =
-      useChangeDetection(ChangeDetectionStrategy.OnPush)
+      useChangeDetection(ChangeDetectionStrategy.OnPush);
 
     it('adds a default change detection strategy to the component configuration', () => {
       // Act

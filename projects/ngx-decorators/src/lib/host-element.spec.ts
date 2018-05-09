@@ -4,14 +4,14 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 
-import { addHostClass } from './host-element';
 import { ComponentOptionsCombinator } from './component-options-combinator';
+import { addHostClass } from './host-element';
 
 describe('Host element', () => {
   describe('addHostClass', () => {
     const commonClass: string = 'spec-component';
     const addCommonClass: ComponentOptionsCombinator = addHostClass(commonClass);
-    
+
     it('adds a host class to the component configuration', () => {
       // Act
       const options: ComponentOptions = addCommonClass({});
