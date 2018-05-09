@@ -12,8 +12,8 @@
   "homepage": "https://github.com/LayZeeDK/ngx-decorators",
   "bugs": "https://github.com/LayZeeDK/ngx-decorators/issues",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/LayZeeDK/ngx-decorators.git"
+    "type": "git",
+    "url": "https://github.com/LayZeeDK/ngx-decorators.git"
   },
   "scripts": {
     "ng": "ng",
@@ -23,36 +23,36 @@
     "lint": "ng lint --type-check --fix --force",
     "e2e": "ng e2e"
   },
-
   "dependencies": {
-    "@angular/common": "^5.2.10",
-    "@angular/compiler": "^5.2.10",
-    "@angular/core": "^5.2.10",
-    "@angular/platform-browser": "^5.2.10",
-    "@angular/platform-browser-dynamic": "^5.2.10",
-    "@angular/router": "^5.2.10",
-    "core-js": "^2.5.5",
-    "rxjs": "^5.5.10",
+    "@angular/common": "^6.0.0",
+    "@angular/compiler": "^6.0.0",
+    "@angular/core": "^6.0.0",
+    "@angular/platform-browser": "^6.0.0",
+    "@angular/platform-browser-dynamic": "^6.0.0",
+    "@angular/router": "^6.0.0",
+    "core-js": "^2.5.6",
+    "rxjs": "^6.1.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
-    "@angular/cli": "~1.7.4",
-    "@angular/compiler-cli": "^5.2.10",
-    "@angular/language-service": "^5.2.10",
-    "@types/jasmine": "~2.8.6",
+    "@angular/cli": "^6.0.0",
+    "@angular/compiler-cli": "^6.0.0",
+    "@angular/language-service": "^6.0.0",
+    "@angular-devkit/build-angular": "~0.6.0",
+    "@types/jasmine": "~2.8.7",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.10.10",
+    "@types/node": "~8.10.13",
     "codelyzer": "^4.3.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.2",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "^1.4.2",
-    "karma-jasmine": "~1.1.1",
+    "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
-    "typescript": "~2.6.2"
+    "typescript": "~2.7.2"
   }
 }
