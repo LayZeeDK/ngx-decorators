@@ -17,8 +17,12 @@
     ],
     "baseUrl": "./",
     "paths": {
-      "ngx-decorators": ["packages"],
-      "ngx-decorators/*": ["packages/*"]
+      "ngx-decorators": [
+        "packages"
+      ],
+      "ngx-decorators/*": [
+        "packages/*"
+      ]
     },
     "strict": false
   }
