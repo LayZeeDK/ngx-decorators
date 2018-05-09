@@ -14,11 +14,11 @@
             "outputPath": "dist/examples",
             "index": "examples/index.html",
             "main": "examples/main.ts",
-            "tsConfig": "examples/tsconfig.app.json",
             "polyfills": "examples/polyfills.ts",
+            "tsConfig": "examples/tsconfig.app.json",
             "assets": [
-              "examples/assets",
-              "examples/favicon.ico"
+              "examples/favicon.ico",
+              "examples/assets"
             ],
             "styles": [
               "examples/styles.scss"
@@ -27,6 +27,12 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "examples/environments/environment.ts",
+                  "with": "examples/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -35,13 +41,7 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "examples/environments/environment.ts",
-                  "with": "examples/environments/environment.prod.ts"
-                }
-              ]
+              "buildOptimizer": true
             }
           }
         },
@@ -66,16 +66,16 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "examples/test.ts",
-            "karmaConfig": "./karma.conf.js",
             "polyfills": "examples/polyfills.ts",
             "tsConfig": "examples/tsconfig.spec.json",
-            "scripts": [],
+            "karmaConfig": "examples/karma.conf.js",
             "styles": [
-              "examples/styles.scss"
+              "styles.scss"
             ],
+            "scripts": [],
             "assets": [
-              "examples/assets",
-              "examples/favicon.ico"
+              "examples/favicon.ico",
+              "examples/assets"
             ]
           }
         },
@@ -94,14 +94,13 @@
       }
     },
     "ngx-decorators-examples-e2e": {
-      "root": "",
-      "sourceRoot": "",
+      "root": "e2e/",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "./protractor.conf.js",
+            "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "ngx-decorators-examples:serve"
           }
         },
