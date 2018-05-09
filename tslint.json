@@ -144,6 +144,7 @@
     "no-implicit-dependencies": false,
     "no-submodule-imports": [
       true,
+      "$common",
       "@angular/core",
       "@angular/platform-browser-dynamic",
       "core-js",

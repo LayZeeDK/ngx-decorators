@@ -23,6 +23,12 @@
       "$common/*": [
         "projects/common/*"
       ],
+      "$testing": [
+        "projects/testing"
+      ],
+      "$testing/*": [
+        "projects/testing/*"
+      ],
       "ngx-decorators": [
         "projects/ngx-decorators/src"
       ]

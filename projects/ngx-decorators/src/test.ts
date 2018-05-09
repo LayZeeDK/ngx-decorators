@@ -2,8 +2,6 @@
 // and framework files
 // tslint:disable:ordered-imports
 
-import 'core-js/es7/reflect';
-import 'zone.js/dist/zone';
 import 'zone.js/dist/zone-testing';
 import { getTestBed } from '@angular/core/testing';
 import {
@@ -11,7 +9,7 @@ import {
   platformBrowserDynamicTesting,
 } from '@angular/platform-browser-dynamic/testing';
 
-import { WebpackContext, WebpackRequire } from '$common';
+import { WebpackContext, WebpackRequire } from '$testing';
 
 declare const require: WebpackRequire;
 

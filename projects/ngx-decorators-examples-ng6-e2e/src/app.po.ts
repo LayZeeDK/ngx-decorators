@@ -1,11 +1,13 @@
 import { browser, by, element } from 'protractor';
 
+import { as } from '$common/coercion';
+
 export class AppPage {
-  navigateTo() {
-    return browser.get('/');
+  public navigateTo(): Promise<any> {
+    return as<Promise<any>>(browser.get('/'));
   }
 
-  getParagraphText() {
-    return element(by.css('example-root h1')).getText();
+  public getParagraphText(): Promise<string> {
+    return as<Promise<string>>(element(by.css('example-root h1')).getText());
   }
 }
