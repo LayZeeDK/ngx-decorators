@@ -147,6 +147,7 @@
       "$common",
       "@angular/core",
       "@angular/platform-browser-dynamic",
+      "@angular/router",
       "core-js",
       "zone.js/dist"
     ],
