@@ -32,6 +32,6 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled: HTMLElement = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent)
-      .toContain('Welcome to example!');
+      .toContain('Decorators for Angular');
   }));
 });
