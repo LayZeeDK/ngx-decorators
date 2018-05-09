@@ -1,3 +1,4 @@
+// tslint:disable:max-line-length
 import {
   ChangeDetectionStrategy,
   Component as ComponentOptions,
@@ -5,7 +6,10 @@ import {
 } from '@angular/core';
 
 import { ComponentOptionsCombinator } from './component-options-combinator';
-import { forceViewEncapsulation, useViewEncapsulation } from './view-encapsulation';
+import {
+  forceViewEncapsulation,
+  useViewEncapsulation,
+} from './view-encapsulation';
 
 describe('View encapsulation', () => {
   describe('forceViewEncapsulation', () => {

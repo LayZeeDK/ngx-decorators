@@ -32,7 +32,10 @@
     "label-position": true,
     "max-line-length": [
       true,
-      80
+      {
+        "limit": 80,
+        "ignore-pattern": "https?://| it\\(| describe\\("
+      }
     ],
     "member-access": true,
     "member-ordering": [
@@ -143,7 +146,12 @@
       true,
       "@angular/core",
       "@angular/platform-browser-dynamic",
+      "core-js",
       "zone.js/dist"
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
     ]
   }
 }

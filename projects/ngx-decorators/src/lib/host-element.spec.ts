@@ -1,3 +1,4 @@
+// tslint:disable:max-line-length
 import {
   ChangeDetectionStrategy,
   Component as ComponentOptions,

@@ -1,3 +1,4 @@
+// tslint:disable:typedef
 import { ViewEncapsulation } from '@angular/core';
 
 import { ComponentOptionsCombinator } from './component-options-combinator';

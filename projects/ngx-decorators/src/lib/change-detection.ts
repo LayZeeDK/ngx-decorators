@@ -1,3 +1,4 @@
+// tslint:disable:typedef
 import { ChangeDetectionStrategy } from '@angular/core';
 
 import { ComponentOptionsCombinator } from './component-options-combinator';

@@ -1,3 +1,4 @@
+// tslint:disable:typedef
 import { ComponentOptionsCombinator } from './component-options-combinator';
 
 /**

@@ -17,6 +17,12 @@
       "dom"
     ],
     "paths": {
+      "$common": [
+        "projects/common"
+      ],
+      "$common/*": [
+        "projects/common/*"
+      ],
       "ngx-decorators": [
         "projects/ngx-decorators/src"
       ]
