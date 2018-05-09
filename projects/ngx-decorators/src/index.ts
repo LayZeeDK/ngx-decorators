@@ -2,6 +2,8 @@
  * Public API Surface of ngx-decorators
  */
 
-export * from './lib/ngx-decorators.service';
-export * from './lib/ngx-decorators.component';
-export * from './lib/ngx-decorators.module';
+export * from './lib/change-detection';
+export * from './lib/component-options-combinator';
+export * from './lib/component.decorator';
+export * from './lib/host-element';
+export * from './lib/view-encapsulation';

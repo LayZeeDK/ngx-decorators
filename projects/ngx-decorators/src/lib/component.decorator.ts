@@ -1,11 +1,10 @@
 import {
   Component as ComponentOptions,
-  // Yes, @angular/core actually has two declarations called 'Component'.
   Component as NgComponent,
   TypeDecorator,
 } from '@angular/core';
 
-import { compose } from '../common';
+import { compose } from './common';
 import { ComponentOptionsCombinator } from './component-options-combinator';
 
 // Not called 'ComponentDecorator', as @angular/core declares one of that name.
