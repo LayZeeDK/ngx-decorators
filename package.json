@@ -25,9 +25,22 @@
     "lint:examples": "ng lint ngx-decorators-examples-ng6 --type-check --force",
     "lint:lib": "ng lint ngx-decorators --type-check --force",
     "e2e": "ng e2e",
+    "e2e:no-serve": "ng e2e ngx-decorators-examples-ng6-e2e --serve=false",
+    "e2e:watch": "npm-watch e2e:no-serve",
     "watch": "npm-watch"
   },
   "watch": {
+    "e2e:no-serve": {
+      "patterns": [
+        "projects/ngx-decorators-examples-ng6/src",
+        "projects/ngx-decorators-examples-ng6-e2e/src"
+      ],
+      "extensions": [
+        "html",
+        "scss",
+        "ts"
+      ]
+    },
     "lint": {
       "patterns": [
         "projects/ngx-decorators/src/lib",
