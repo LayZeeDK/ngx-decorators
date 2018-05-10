@@ -1,9 +1,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "declaration": false,
     "sourceMap": true,
+    "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -15,11 +16,22 @@
       "es2017",
       "dom"
     ],
-    "baseUrl": "./",
     "paths": {
-      "ngx-decorators": ["packages"],
-      "ngx-decorators/*": ["packages/*"]
-    },
-    "strict": false
+      "$common": [
+        "projects/common"
+      ],
+      "$common/*": [
+        "projects/common/*"
+      ],
+      "$testing": [
+        "projects/testing"
+      ],
+      "$testing/*": [
+        "projects/testing/*"
+      ],
+      "ngx-decorators": [
+        "projects/ngx-decorators/src"
+      ]
+    }
   }
 }

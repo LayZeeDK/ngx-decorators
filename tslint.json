@@ -21,7 +21,6 @@
     "forin": true,
     "import-blacklist": [
       true,
-      "rxjs",
       "rxjs/Rx"
     ],
     "import-spacing": true,
@@ -33,7 +32,10 @@
     "label-position": true,
     "max-line-length": [
       true,
-      80
+      {
+        "limit": 80,
+        "ignore-pattern": "https?://| it\\(| describe\\("
+      }
     ],
     "member-access": true,
     "member-ordering": [
@@ -116,18 +118,6 @@
       "check-separator",
       "check-type"
     ],
-    "directive-selector": [
-      true,
-      "attribute",
-      "example",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "example",
-      "kebab-case"
-    ],
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
@@ -154,9 +144,16 @@
     "no-implicit-dependencies": false,
     "no-submodule-imports": [
       true,
+      "$common",
       "@angular/core",
       "@angular/platform-browser-dynamic",
+      "@angular/router",
+      "core-js",
       "zone.js/dist"
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
     ]
   }
 }
