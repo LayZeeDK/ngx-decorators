@@ -1,4 +1,4 @@
-import { Component } from '../common';
+import { Component } from '../common/decorators';
 
 @Component({
   selector: 'example-common-decorator',

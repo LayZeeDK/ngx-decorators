@@ -1,6 +1,6 @@
-import { Component } from '../common';
+import { ShadowDom } from '../common/decorators';
 
-@Component({
+@ShadowDom({
   selector: 'example-shadow-dom',
   template: '<p>ShadowDomComponent works!</p>',
 })

@@ -1,6 +1,6 @@
-import { Component } from '../common';
+import { OnPush } from '../common/decorators';
 
-@Component({
+@OnPush({
   selector: 'example-on-push',
   template: '<p>OnPushComponent works!</p>',
 })

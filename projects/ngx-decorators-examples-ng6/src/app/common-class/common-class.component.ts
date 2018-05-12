@@ -1,6 +1,6 @@
-import { Component } from '../common';
+import { CommonClass } from '../common/decorators';
 
-@Component({
+@CommonClass({
   selector: 'example-common-class',
   template: '<p>CommonClassComponent works!</p>',
 })
