@@ -1,14 +1,15 @@
 import { AppPage } from './app.po';
 
-describe('workspace-project App', () => {
-  let page: AppPage;
-
+describe('App (Angular Version 6)', () => {
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  let page: AppPage;
+
+  it('displays title', () => {
     page.navigateTo();
+
     expect(page.getParagraphText()).toContain('Decorators for Angular');
   });
 });
