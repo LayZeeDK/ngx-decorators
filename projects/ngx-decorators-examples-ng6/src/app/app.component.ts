@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  public title: string = 'Decorators for Angular Version 6 Examples';
+  title: string = 'Decorators for Angular Version 6 Examples';
 }

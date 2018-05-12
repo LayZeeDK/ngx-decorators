@@ -1,3 +1,3 @@
 export abstract class Environment {
-  public abstract readonly production: boolean;
+  abstract readonly production: boolean;
 }

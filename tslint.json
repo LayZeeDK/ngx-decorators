@@ -37,7 +37,10 @@
         "ignore-pattern": "https?://| it\\(| describe\\("
       }
     ],
-    "member-access": true,
+    "member-access": [
+      true,
+      "no-public"
+    ],
     "member-ordering": [
       true,
       {
