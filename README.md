@@ -1,5 +1,5 @@
 # Decorators for Angular (ngx-decorators)
-Manage your Angular component decorators like a boss.
+Manage your Angular components like a boss.
 
 ## Installation
 Install using NPM CLI
