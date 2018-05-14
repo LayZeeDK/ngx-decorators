@@ -1,35 +1,48 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { AppComponent } from './app.component';
 
-describe('AppComponent', () => {
-  beforeEach(async(() => {
+describe(AppComponent.name, () => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       declarations: [AppComponent],
       imports: [RouterTestingModule],
       schemas: [NO_ERRORS_SCHEMA],
-    }).compileComponents();
-  }));
-  it('should create the app', async(() => {
-    const fixture: ComponentFixture<AppComponent> =
-      TestBed.createComponent(AppComponent);
-    const app: AppComponent = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
-  it(`should have as title 'example'`, async(() => {
-    const fixture: ComponentFixture<AppComponent> =
-      TestBed.createComponent(AppComponent);
-    const app: AppComponent = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Decorators for Angular Version 6 Examples');
-  }));
-  it('should render title in a h1 tag', async(() => {
-    const fixture: ComponentFixture<AppComponent> =
-      TestBed.createComponent(AppComponent);
+    });
+    await TestBed.compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.debugElement.componentInstance;
     fixture.detectChanges();
-    const compiled: HTMLElement = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent)
+  });
+
+  afterEach(() => {
+    component = undefined as any;
+    fixture = undefined as any;
+  });
+
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+
+  it('should create the app', async(() => {
+    expect(component).toBeTruthy();
+  }));
+
+  it(`should have a descriptive title`, async(() => {
+    expect(component.title)
       .toContain('Decorators for Angular');
+  }));
+
+  it('should render title in an h1 tag', async(() => {
+    const h1: HTMLElement = fixture.debugElement.query(
+      By.css('h1'))
+      .nativeElement;
+
+    expect(h1.textContent).toContain('Decorators for Angular');
   }));
 });
