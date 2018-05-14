@@ -145,7 +145,7 @@ import { Component } from '../decorators/component.decorator';
 export class MatCard {}
 ```
 
-Even if we by accident adds the default change detection strategy or emulated
+Even if we by accident add the default change detection strategy or emulated
 view encapsulation, our custom component decorator takes care of it for us. This
 is of course entirely customizable.
 
