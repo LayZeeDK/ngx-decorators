@@ -23,6 +23,6 @@
     "decorators"
   ],
   "peerDependencies": {
-    "@angular/core": ">=6.0.0 <8.0.0"
+    "@angular/core": ">=2.0.0"
   }
 }
