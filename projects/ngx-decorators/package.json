@@ -1,7 +1,7 @@
 {
   "name": "ngx-decorators",
-  "description": "Decorators that enable you to configure your Angular components.",
-  "version": "0.1.0",
+  "description": "Manage your Angular components like a boss.",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Lars Gyrup Brink Nielsen",
