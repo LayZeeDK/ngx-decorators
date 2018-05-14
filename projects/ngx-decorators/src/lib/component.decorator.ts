@@ -10,10 +10,11 @@ import { ComponentOptionsCombinator } from './component-options-combinator';
 // Not called 'ComponentDecorator', as @angular/core declares one of that name.
 export type CustomComponentDecorator =
   (options: ComponentOptions) => TypeDecorator;
-type ComponentDecoratorFactory =
-  (combinators: ReadonlyArray<ComponentOptionsCombinator>) =>
+export type ComponentDecoratorFactory =
+  (combinators: ComponentOptionsCombinators) =>
     CustomComponentDecorator;
-type Combinators = ReadonlyArray<ComponentOptionsCombinator>;
+export type ComponentOptionsCombinators =
+  ReadonlyArray<ComponentOptionsCombinator>;
 
 /**
  * Create a custom component decorator by composing the specified component
@@ -22,6 +23,6 @@ type Combinators = ReadonlyArray<ComponentOptionsCombinator>;
  * @param combinators Component option combinators.
  */
 export const createComponentDecorator: ComponentDecoratorFactory =
-  (combinators: Combinators = []): CustomComponentDecorator =>
+  (combinators: ComponentOptionsCombinators = []): CustomComponentDecorator =>
     (options: ComponentOptions): TypeDecorator =>
       compose(NgComponent, ...combinators)(options);
