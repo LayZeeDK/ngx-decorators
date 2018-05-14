@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommmonClassComponent } from './common-class';
 import { CommonDecoratorComponent } from './common-decorator';
+import { MaterialComponent } from './material';
 import { NavigationComponent } from './navigation';
 import { OnPushComponent } from './on-push';
 import { ShadowDomComponent } from './shadow-dom';
@@ -15,6 +16,7 @@ import { ShadowDomComponent } from './shadow-dom';
     AppComponent,
     CommmonClassComponent,
     CommonDecoratorComponent,
+    MaterialComponent,
     NavigationComponent,
     OnPushComponent,
     ShadowDomComponent,
