@@ -1,15 +1,14 @@
 import { ShadowDomPage } from './shadow-dom.po';
 
 describe('Shadow DOM (Angular Version 6)', () => {
-  beforeEach(async () => {
+  beforeEach(() => {
     page = new ShadowDomPage();
-
-    await page.navigateTo();
+    page.navigateTo();
   });
 
   let page: ShadowDomPage;
 
   it('uses Shadow DOM by default', () => {
-    expect(page.getTextInShadowDom()).toBe('ShadowDomComponent works!');
+    expect(page.shadowDom.text).toBe('ShadowDomComponent works!');
   });
 });

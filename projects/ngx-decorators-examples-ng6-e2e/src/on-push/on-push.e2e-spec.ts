@@ -11,8 +11,8 @@ describe('OnPush Change Detection (Angular Version 6)', () => {
   let page: OnPushPage;
 
   it('detects changes on push by default', () => {
-    browser.sleep(1000);
+    browser.sleep(50);
 
-    expect(page.getText()).toBe('OnPushComponent works!');
+    expect(page.text).toBe('OnPushComponent works!');
   });
 });

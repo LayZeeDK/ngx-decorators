@@ -19,7 +19,7 @@ describe('Common Component Decorator (Angular Version 6)', () => {
   });
 
   it('detects changes on push by default', () => {
-    browser.sleep(1000);
+    browser.sleep(50);
 
     expect(page.shadowDom.text).toBe('CommonDecoratorComponent works!');
   });

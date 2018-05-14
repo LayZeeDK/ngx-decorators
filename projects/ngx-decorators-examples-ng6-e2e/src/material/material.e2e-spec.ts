@@ -11,7 +11,7 @@ describe('Angular Material Decorator (Angular Version 6)', () => {
   let page: MaterialPage;
 
   it('detects changes on push', () => {
-    browser.sleep(1000);
+    browser.sleep(50);
 
     expect(page.text).toBe('MaterialComponent works!');
   });
