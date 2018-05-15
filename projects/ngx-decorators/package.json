@@ -20,7 +20,9 @@
   },
   "keywords": [
     "angular",
-    "decorators"
+    "decorators",
+    "angular-components",
+    "components"
   ],
   "peerDependencies": {
     "@angular/core": ">=2.0.0"
