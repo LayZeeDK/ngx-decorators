@@ -159,3 +159,7 @@ public API of `@angular/core` gets breaking changes.
 ## Caveats
 Do not use a custom component decorator for your root component, i.e. 
 `AppComponent` unless you are using Node.js version 9 or newer.
+
+## Attributions
+Thank you [Mahmoud Abduljawad](https://github.com/AjawadMahmoud) for your
+support, ideation and testing.
