@@ -145,7 +145,7 @@ import { Component } from '../decorators/component.decorator';
 export class MatCard {}
 ```
 
-Even if we by accident adds the default change detection strategy or emulated
+Even if we by accident add the default change detection strategy or emulated
 view encapsulation, our custom component decorator takes care of it for us. This
 is of course entirely customizable.
 
@@ -159,3 +159,7 @@ public API of `@angular/core` gets breaking changes.
 ## Caveats
 Do not use a custom component decorator for your root component, i.e. 
 `AppComponent` unless you are using Node.js version 9 or newer.
+
+## Attributions
+Thank you [Mahmoud Abduljawad](https://github.com/AjawadMahmoud) for your
+support, ideation and testing.
