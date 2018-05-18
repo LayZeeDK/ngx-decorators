@@ -184,5 +184,8 @@
     "@schematics/angular:service": {
       "spec": false
     }
+  },
+  "cli": {
+    "packageManager": "yarn"
   }
 }
