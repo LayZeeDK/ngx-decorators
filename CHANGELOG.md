@@ -1,5 +1,11 @@
 # Decorators for Angular Changelog
 
+## 1.0.2 (2018-06-02)
+
+### Features
+
+* **docs** add note about missing AOT support
+
 ## 1.0.1 (2018-05-14)
 
 ### Features
