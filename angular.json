@@ -38,7 +38,8 @@
             ],
             "exclude": [
               "**/node_modules/**"
-            ]
+            ],
+            "typeCheck": true
           }
         }
       }
@@ -130,7 +131,8 @@
             ],
             "exclude": [
               "**/node_modules/**"
-            ]
+            ],
+            "typeCheck": true
           }
         }
       }
@@ -152,7 +154,8 @@
             "tsConfig": "projects/ngx-decorators-examples-ng6-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
-            ]
+            ],
+            "typeCheck": true
           }
         }
       }
@@ -184,5 +187,8 @@
     "@schematics/angular:service": {
       "spec": false
     }
+  },
+  "cli": {
+    "packageManager": "yarn"
   }
 }

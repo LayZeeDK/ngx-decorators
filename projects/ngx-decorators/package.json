@@ -1,7 +1,7 @@
 {
   "name": "ngx-decorators",
   "description": "Manage your Angular components like a boss.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "author": {
     "name": "Lars Gyrup Brink Nielsen",
@@ -20,7 +20,9 @@
   },
   "keywords": [
     "angular",
-    "decorators"
+    "decorators",
+    "angular-components",
+    "components"
   ],
   "peerDependencies": {
     "@angular/core": ">=2.0.0"

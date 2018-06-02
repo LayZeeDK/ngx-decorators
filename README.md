@@ -1,6 +1,8 @@
 # Decorators for Angular (ngx-decorators)
 Manage your Angular components like a boss.
 
+**NOTE!** Decorators for Angular is not compatible with Angular AOT compilation.
+
 ## Installation
 Install using NPM CLI
 ```
@@ -157,6 +159,14 @@ is unlikely that it will stop working until Angular's component decorator or the
 public API of `@angular/core` gets breaking changes.
 
 ## Caveats
+
+### Angular AOT compilation
+Angular AOT compilation does not support arrow functions or function
+expressions. While the arrow functions can easily be converted to function
+declarations, this library does not contribute anything without its combinator
+creators that are using function expressions.
+
+### Node.js
 Do not use a custom component decorator for your root component, i.e. 
 `AppComponent` unless you are using Node.js version 9 or newer.
 
