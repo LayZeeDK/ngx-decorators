@@ -205,11 +205,11 @@
   version "2.8.6"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.6.tgz#14445b6a1613cf4e05dd61c3c3256d0e95c0421e"
 
-"@types/jasmine@~2.8.8":
+"@types/jasmine@^2.8.8":
   version "2.8.8"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.8.tgz#bf53a7d193ea8b03867a38bfdb4fbb0e0bf066c9"
 
-"@types/jasminewd2@~2.0.3":
+"@types/jasminewd2@^2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/jasminewd2/-/jasminewd2-2.0.3.tgz#0d2886b0cbdae4c0eeba55e30792f584bf040a95"
   dependencies:
@@ -1575,6 +1575,17 @@ copy-webpack-plugin@^4.5.1:
     minimatch "^3.0.4"
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
+
+copyfiles@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/copyfiles/-/copyfiles-2.0.0.tgz#bbd78bb78e8fd6db5c67adf54249317b24560f2a"
+  dependencies:
+    glob "^7.0.5"
+    minimatch "^3.0.3"
+    mkdirp "^0.5.1"
+    noms "0.0.0"
+    through2 "^2.0.1"
+    yargs "^11.0.0"
 
 core-js@^2.2.0, core-js@^2.4.0:
   version "2.5.4"
@@ -4761,6 +4772,13 @@ nodemon@^1.12.1:
     undefsafe "^2.0.2"
     update-notifier "^2.3.0"
 
+noms@0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/noms/-/noms-0.0.0.tgz#da8ebd9f3af9d6760919b27d9cdc8092a7332859"
+  dependencies:
+    inherits "^2.0.1"
+    readable-stream "~1.0.31"
+
 "nopt@2 || 3", nopt@3.x:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-3.0.6.tgz#c6465dbf08abcd4db359317f79ac68a646b28ff9"
@@ -5673,7 +5691,7 @@ read-pkg@^3.0.0:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-readable-stream@1.0:
+readable-stream@1.0, readable-stream@~1.0.31:
   version "1.0.34"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
   dependencies:
@@ -6906,7 +6924,7 @@ term-size@^1.2.0:
   dependencies:
     execa "^0.7.0"
 
-through2@^2.0.0:
+through2@^2.0.0, through2@^2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
   dependencies:
@@ -7753,7 +7771,7 @@ yargs-parser@^9.0.2:
   dependencies:
     camelcase "^4.1.0"
 
-yargs@11.0.0:
+yargs@11.0.0, yargs@^11.0.0:
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-11.0.0.tgz#c052931006c5eee74610e5fc0354bedfd08a201b"
   dependencies:
