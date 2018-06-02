@@ -16,17 +16,17 @@
     "url": "https://github.com/LayZeeDK/ngx-decorators.git"
   },
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
     "build": "ng build ngx-decorators --prod",
-    "test": "ng test",
+    "e2e": "ng e2e",
+    "e2e:no-serve": "ng e2e ngx-decorators-examples-ng6-e2e --serve=false",
+    "e2e:watch": "npm-watch e2e:no-serve",
     "lint": "run-p lint:e2e lint:examples lint:lib",
     "lint:e2e": "ng lint ngx-decorators-examples-ng6-e2e --type-check --force",
     "lint:examples": "ng lint ngx-decorators-examples-ng6 --type-check --force",
     "lint:lib": "ng lint ngx-decorators --type-check --force",
-    "e2e": "ng e2e",
-    "e2e:no-serve": "ng e2e ngx-decorators-examples-ng6-e2e --serve=false",
-    "e2e:watch": "npm-watch e2e:no-serve",
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test",
     "watch": "npm-watch"
   },
   "watch": {
