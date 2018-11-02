@@ -26,4 +26,4 @@
 
 ### Features
 
-* register NPM package anme
+* register NPM package name
