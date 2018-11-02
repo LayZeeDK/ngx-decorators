@@ -6,11 +6,7 @@ import { Material } from '../common/decorators/material.decorator';
   host: { class: 'example-material' },
   selector: 'example-material',
   styleUrls: ['./material.component.css'],
-  template: `
-    <h1>
-      MaterialComponent works!
-    </h1>
-  `,
+  templateUrl: './material.component.html',
 })
 export class MaterialComponent implements OnInit {
   @Input()
