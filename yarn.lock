@@ -5516,7 +5516,7 @@ nodemailer@^2.5.0:
     nodemailer-smtp-transport "2.7.2"
     socks "1.1.9"
 
-nodemon@^1.12.1:
+nodemon@^1.18.7:
   version "1.18.9"
   resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.18.9.tgz#90b467efd3b3c81b9453380aeb2a2cba535d0ead"
   integrity sha512-oj/eEVTEI47pzYAjGkpcNw0xYwTl4XSTUQv2NPQI6PpN3b75PhpuYk3Vb3U80xHCyM2Jm+1j68ULHXl4OR3Afw==
@@ -5648,12 +5648,12 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
-npm-watch@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/npm-watch/-/npm-watch-0.3.0.tgz#8f4272c0143e2f4720dbafb111fb91d015fbf82d"
-  integrity sha512-w/czxbmI2B/L7eotpo8wfE5u92X6Oguy+L3ECgfUUaERNSAtIHR0djYqzGVD7BakCH+HE3hHoDxV798rug/A6g==
+npm-watch@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/npm-watch/-/npm-watch-0.5.0.tgz#975e492e4dd271f163054b0d839d273fcc74b85f"
+  integrity sha512-Rww9iNlmsVhcpUTDoKfUlbfmEtTZ3T3gUZBW/VjuL4ct/nwV0XlwBDOxR0ECJ/cLF8PF1wPVa/IrinI6K5ECQQ==
   dependencies:
-    nodemon "^1.12.1"
+    nodemon "^1.18.7"
     through2 "^2.0.0"
 
 "npmlog@0 || 1 || 2 || 3 || 4", "npmlog@2 || ^3.1.0 || ^4.0.0", npmlog@^4.0.0, npmlog@^4.0.2:
